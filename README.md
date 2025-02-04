@@ -1,7 +1,3 @@
-Below are two key files you can add to your repository: a README.md that outlines the repository’s focus and a USER-STORIES.md that defines your product and lists user stories meeting the INVEST criteria.
-
-README.md
-
 # Hugo Mock Landing Page for PlantPal
 
 This repository hosts a mock landing page built with [Hugo](https://gohugo.io/) using the [hugo-bootstrap-theme](https://github.com/filipecarneiro/hugo-bootstrap-theme) as a submodule. The purpose of this project is to demonstrate how to customize a modern static site for a product, applying best practices in commit messaging, version control, and public code sharing.
