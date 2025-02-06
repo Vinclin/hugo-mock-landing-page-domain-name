@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on PlantPal</title>
+    <link>https://vinclin.github.io/hugo-mock-landing-page/post/</link>
+    <description>Recent content in Posts on PlantPal</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>Vincent Lin</copyright>
+    <atom:link href="https://vinclin.github.io/hugo-mock-landing-page/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introducing PlantPal: Revolutionize Your Indoor Garden Care</title>
+      <link>https://vinclin.github.io/hugo-mock-landing-page/post/introduction_post/</link>
+      <pubDate>Wed, 05 Feb 2025 12:00:00 +0000</pubDate>
+      <guid>https://vinclin.github.io/hugo-mock-landing-page/post/introduction_post/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;plantpal.png&#34; alt=&#34;PlantPal&#34;&gt;{ .img-fluid }&lt;/p&gt;&#xA;&lt;p&gt;Welcome to the next generation of indoor plant care! &lt;strong&gt;PlantPal&lt;/strong&gt; is designed to simplify your gardening routine while making sure your beloved houseplants receive exactly what they need to thrive. With a focus on ease-of-use and a friendly interface, PlantPal leverages IoT sensors and smart integrations to bring you a streamlined, stress-free plant care experience.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-makes-plantpal-unique&#34;&gt;What Makes PlantPal Unique?&lt;/h2&gt;&#xA;&lt;h3 id=&#34;real-time-sensor-insights&#34;&gt;Real-Time Sensor Insights&lt;/h3&gt;&#xA;&lt;p&gt;Stay informed with a clear, concise dashboard that displays up-to-the-minute data on your plants’ soil moisture, light exposure, and temperature. No more guessing when to water or adjust the lighting—PlantPal tells you exactly what your plants need.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

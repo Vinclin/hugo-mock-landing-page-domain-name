@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Featured on PlantPal</title>
+    <link>https://vinclin.github.io/hugo-mock-landing-page/tags/featured/</link>
+    <description>Recent content in Featured on PlantPal</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>Vincent Lin</copyright>
+    <atom:link href="https://vinclin.github.io/hugo-mock-landing-page/tags/featured/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PlantPal: Smart Indoor Gardening Assistant</title>
+      <link>https://vinclin.github.io/hugo-mock-landing-page/page/setup_page/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://vinclin.github.io/hugo-mock-landing-page/page/setup_page/</guid>
+      <description>&lt;h1 id=&#34;plantpal-smart-indoor-gardening-assistant&#34;&gt;PlantPal: Smart Indoor Gardening Assistant&lt;/h1&gt;&#xA;&lt;p&gt;PlantPal brings the power of IoT to indoor gardening, making plant care effortless and enjoyable. With real-time sensor monitoring, smart home automation, and a vibrant community, PlantPal is your go-to solution for keeping your houseplants thriving.&lt;/p&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;PlantPal integrates advanced sensors, intelligent automation, and community support to provide a seamless plant care experience. Here’s a quick look at its key features:&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;&lt;strong&gt;Feature&lt;/strong&gt;&lt;/th&gt;&#xA;          &lt;th&gt;&lt;strong&gt;Description&lt;/strong&gt;&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Real-Time Monitoring&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;View live sensor data on soil moisture, light exposure, and temperature.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Personalized Care&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Receive tailored recommendations to optimize your plants&amp;rsquo; health.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Smart Home Integration&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Automate watering, lighting, and other tasks with seamless device connectivity.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Community Forum&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Connect with other plant enthusiasts to share tips and success stories.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Mobile Optimized&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Access your PlantPal dashboard on any device, anytime, anywhere.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;getting-started&#34;&gt;Getting Started&lt;/h2&gt;&#xA;&lt;p&gt;Setting up PlantPal is quick and easy:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
