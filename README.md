@@ -1,55 +1,65 @@
-# Hugo Mock Landing Page for PlantPal
+# Hugo Mock Landing Page (Auto-Deployed)
 
-This repository hosts a mock landing page built with [Hugo](https://gohugo.io/) using the [hugo-bootstrap-theme](https://github.com/filipecarneiro/hugo-bootstrap-theme) as a submodule. The purpose of this project is to demonstrate how to customize a modern static site for a product, applying best practices in commit messaging, version control, and public code sharing.
+This repository is a Hugo-based static website that is automatically built and deployed to GitHub Pages using GitHub Actions. Every time changes are pushed to the **main** branch, the workflow builds the site and publishes it to the **gh-pages** branch.
 
-## About PlantPal
+## GitHub Actions Deployment Workflow
 
-**PlantPal** is a smart indoor gardening assistant designed to help plant owners care for their houseplants. Using IoT sensors, PlantPal monitors environmental conditions (like soil moisture, light, and temperature) and provides personalized care tips. It also features a community forum for sharing advice and inspiration, making plant care accessible and enjoyable.
+The deployment process is defined in the workflow file: **.github/workflows/gh-pages-deployment.yaml**. The workflow consists of the following key steps:
 
-## Key Features
+1. **Checkout Source Code**
+   - Uses the [`actions/checkout@v3.5.1`](https://github.com/actions/checkout) action to clone the repository.
+   - Ensures submodules (like the Hugo theme) are included and that full history is fetched for accurate metadata.
 
-- **Responsive & Modern Design:** Fully customizable landing page based on the Bootstrap theme.
-- **Real-Time Monitoring:** Display live sensor data for each plant.
-- **Personalized Care:** Provide tailored care recommendations based on sensor input.
-- **Community Engagement:** Integrated community forum for tips, challenges, and social sharing.
-- **Easy Onboarding:** A user-friendly setup wizard to get started quickly.
+2. **Initialize Hugo Environment**
+   - Sets up Hugo using [`peaceiris/actions-hugo@v2.6.0`](https://github.com/peaceiris/actions-hugo) with the specified version (`0.123.4`) and enables the extended version.
 
-## Getting Started
+3. **Build the Site**
+   - Runs `hugo -D --gc --minify` to generate static files.
+   - The flags:
+     - `-D` includes content marked as drafts.
+     - `--gc` performs garbage collection.
+     - `--minify` reduces the size of HTML, CSS, and JS files.
 
-1. **Clone the Repository (with submodules):**
+4. **Deploy to GitHub Pages**
+   - Uses [`peaceiris/actions-gh-pages@v3.9.3`](https://github.com/peaceiris/actions-gh-pages) to deploy the site.
+   - Publishes the generated files to the **gh-pages** branch using the provided `GITHUB_TOKEN`.
 
-   ```bash
-   git clone --recurse-submodules https://github.com/<your-username>/hugo-mock-landing-page.git
-   cd hugo-mock-landing-page
-   code .
+## Repository and Workflow Settings
 
-2. Install Dependencies:
+- **Repository Settings:**
+  - GitHub Actions is configured with **read and write permissions** to allow deployments.
+  - GitHub Pages is set to use the **gh-pages** branch as its publishing source.
+  - The default permissions are set to allow all actions and reusable workflows.
 
-    - Ensure Node.js is installed for theme builds.
-    - Install any other dependencies required by the theme (see the theme’s README for details).
+- **Configuration Adjustments:**
+  - The `baseURL` in the configuration file (`config.toml` or `config.yaml`) has been updated to:
 
-3. Run the Site Locally: `hugo server`. Open your browser and visit <http://localhost:1313/hugo-bootstrap-theme/> (or the port indicated in your terminal) to view the site.
+    ``` bash
+    baseURL = 'https://<GitHub username>.github.io/hugo-mock-landing-page-autodeployed/'
+    ```
 
-4. Customize:
+  - Replace `<GitHub username>` with your actual GitHub username.
 
-    - Edit content files (in Markdown) to update copy, images, and features.
-    - Modify config.toml to include your name, GitHub Pages URL, and product details.
-    - Remove or update extraneous example pages and posts.
+## Continuous Deployment Process
 
-5. Commit Guidelines: We follow a conventional commit style. Examples include:
+- **Trigger:** Every push to the **main** branch triggers the workflow.
+- **Result:** Once the GitHub Actions workflow completes successfully, the updated website is deployed and available at: [site](https://.github.io/hugo-mock-landing-page-autodeployed/)
+- **Troubleshooting:** If you experience a 404 error after deployment, wait a few minutes and refresh your browserrefresh your browser for a few minutes. If the workflow fails, double-check the GitHub Actions permissions (ensuring read/write access).
 
-    - feat: Add personalized care tips section
-    - fix: Correct image paths in static assets
-    - style: Update color scheme and logo
-    - docs: Add installation instructions to README
-    - chore: Remove unused example pages
+## Workflow Explanation Transcript
 
-6. Deploying to GitHub Pages: After running hugo to generate the static site, use the provided publish_to_gh_pages.sh script to push the output to the gh-pages branch.
+During setup, we consulted with Claude for a deeper understanding of the GitHub Actions YAML file. Below is an excerpt from that conversation:
 
-Repository Structure
+> **Claude explained:**  
+> "The workflow is structured into clear steps: first, it checks out the repository (including submodules), then it initializes the Hugo environment by setting the correct version and configuration, compiles the website into static files, and finally deploys those files to GitHub Pages. This automation not only streamlines the deployment process but also ensures that every update on the main branch is immediately reflected on the live site."
 
-- config.toml: Main site configuration.
-- content/: Markdown files for pages and posts.
-- static/: Assets such as images and stylesheets.
-- themes/hugo-bootstrap-theme/: Git submodule for the theme.
-- USER-STORIES.md: Contains the user stories for PlantPal.
+## Contributing
+
+If you wish to contribute or suggest improvements:
+
+- Open an issue on the repository using the provided link.
+- Feel free to fork the repository and submit pull requests.
+
+---
+
+This documentation should help you (and others) understand the deployment process and facilitate troubleshooting if needed. Commit this updated **README.md** along with the workflow explanation transcript (e.g., as a PDF) to ensure all information is centralized in the repository.
