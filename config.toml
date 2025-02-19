@@ -1,4 +1,4 @@
-baseURL = 'https://vinclin.github.io/hugo-mock-landing-page-autodeployed/'
+baseURL = 'https://vinclin.github.io/hugo-mock-landing-page-domain-name/'
 title = "Hugo Bootstrap Theme"
 author = "Filipe Carneiro"
 copyright = "Open-source <a class=\"text-muted text-decoration-none\" href=\"https://github.com/filipecarneiro/hugo-bootstrap-theme/blob/main/LICENSE\">MIT</a> Licensed."
