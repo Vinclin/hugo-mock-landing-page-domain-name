@@ -6,6 +6,6 @@ menu:
     weight: 90
 ---
 
-# Contact
+## Contact
 
 [Open an issue](https://github.com/vinclin/hugo-mock-landing-page-autodeployed/issues/new) on GitHub.
